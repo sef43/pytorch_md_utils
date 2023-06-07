@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytorch_md_utils"
+version = "0.0.1"
+authors = [
+  { name="sef43"},
+]
+description = "A collection of Torchscript compatible PyTorch functions useful for Molecular Simulation"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+test = [
+    "openmm>=8.0"
+]
